@@ -5,7 +5,7 @@
  */
 /*
 Plugin Name: WP Multi File Uploader
-Plugin URI: http://danholloran.com/multi-file-uploader/
+Plugin URI: http://danholloran.com/wp-multi-file-uploader/
 Description: Multi File Uploader
 Author: Dan Holloran
 Version: 1.0
