@@ -1,7 +1,7 @@
 #WP Multi File Uploader
 
-**Description:** Wordpress plugin that allows a user to submit multiple files from a form on your Wordpress site via AJAX to Wordpress default uploads fold and adds an attachment to the 
-Wordpress media gallery.  
+**Description:** Wordpress plugin that allows a user to submit multiple files from a form on your Wordpress site via AJAX to Wordpress default uploads folder and adds an attachment to the 
+Wordpress media gallery.  Includes a shortcode `[wp-multi-file-uploader]` for use in a form created in the post editor and a function for use in a form in a template file `wp_multi_file_uploader();`.   
 
 **Plugin Home Page:** [http://danholloran.com/wp-multi-file-uploader/](http://danholloran.com/wp-multi-file-uploader/)  
 
