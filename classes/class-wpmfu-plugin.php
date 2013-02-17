@@ -51,7 +51,7 @@ class WPMFU_Plugin
 		$version = '1.0';
 		wp_register_script( 'wpmfu_script', plugins_url( 'assets/js/fineuploader.min.js' , dirname(__FILE__) ), array( 'jquery' ), $version, true );
 		wp_enqueue_script( 'wpmfu_script' );
-		wp_register_style( 'wpmfu_style', plugins_url( 'assets/css/fineuploader.css' , dirname(__FILE__) ), $deps, $version );
+		wp_register_style( 'wpmfu_style', plugins_url( 'assets/css/fineuploader.css' , dirname(__FILE__) ), array(), $version );
 		wp_enqueue_style( 'wpmfu_style' );
 	} // enqueue_scripts_styles()
 
