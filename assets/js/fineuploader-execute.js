@@ -31,6 +31,9 @@ jQuery(function($) {
 					uploader.data('filecount', fileCount + 1);
 				} // if()
 			} // onComplete
+		},
+		text: {
+			uploadButton: 'Upload File(s)'
 		}
 	});
 
