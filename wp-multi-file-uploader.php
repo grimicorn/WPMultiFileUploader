@@ -1,14 +1,14 @@
 <?php
 /**
  * @package WP_Multi_File_Uploader
- * @version 1.0
+ * @version 1.0.0
  */
 /*
 Plugin Name: WP Multi File Uploader
 Plugin URI: http://danholloran.com/wp-multi-file-uploader/
 Description: Wordpress plugin that allows a user to submit multiple files from a form on your Wordpress site via AJAX to Wordpress default uploads fold and adds an attachment to the Wordpress media gallery.
 Author: Dan Holloran
-Version: 1.0
+Version: 1.0.0
 Author URI: http://danholloran.com/
 */
 
