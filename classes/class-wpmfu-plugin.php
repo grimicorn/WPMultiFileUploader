@@ -27,12 +27,20 @@ class WPMFU_Plugin
 
 
 	/*
-	* Generate Shortcode
+	* Generate The Shortcode
 	*/
 	function shortcode( $atts ) {
 		$atts = extract( shortcode_atts( array( 'default'=>'values' ),$atts ) );
 		return '<ul id="wp_multi_file_uploader" class="unstyled" data-filecount="1" data-ajaxurl="' . site_url( 'wp-admin/admin-ajax.php' ) . '"></ul>';
 	}
+
+	/*
+	* Output The Upload Form
+	*/
+	function output_form()
+	{
+		echo '<ul id="wp_multi_file_uploader" class="unstyled" data-filecount="1" data-ajaxurl="' . site_url( 'wp-admin/admin-ajax.php' ) . '"></ul>';
+	} // output_form()
 
 
 	/*
