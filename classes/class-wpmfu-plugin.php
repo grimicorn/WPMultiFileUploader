@@ -9,6 +9,7 @@ class WPMFU_Plugin
 	* Constructor
 	*/
 	public function __construct() {
+		// Hooks & Actions
 		$this->init_hooks();
 	} // __construct()
 
@@ -18,10 +19,19 @@ class WPMFU_Plugin
 	*/
 	public function init_hooks()
 	{
-		// Styles & Scripts
-		add_action( 'wp_enqueue_scripts', array( __CLASS__, 'enqueue_scripts_styles' ) );
-		// Shortcode
-		add_shortcode( 'wp-multi-file-uploader', array( __CLASS__, 'shortcode' ) );
+
+		if ( is_admin() ) {
+			// Add Options Page
+			add_action( 'admin_menu', array( &$this, 'add_options_page' ) );
+			// Register Options
+			add_action( 'admin_init', array( &$this, 'register_settings' ) );
+		} else {
+			// Styles & Scripts
+			add_action( 'wp_enqueue_scripts', array( __CLASS__, 'enqueue_scripts_styles' ) );
+			// Shortcode
+			add_shortcode( 'wp-multi-file-uploader', array( __CLASS__, 'shortcode' ) );
+		} // if/else(is_admin())
+
 	} // init_hooks()
 
 
@@ -55,5 +65,88 @@ class WPMFU_Plugin
 		wp_enqueue_style( 'wpmfu_style' );
 	} // enqueue_scripts_styles()
 
+
+	/*
+	*	Add Options Page
+	*/
+	function add_options_page()
+	{
+		add_options_page(
+			'WP Multi File Uploader Options',
+			'WPMFU Settings',
+			'manage_options',
+			'wp-multi-file-uploader',
+			array( &$this, 'options_page' )
+		);
+	} // add_options_page()
+
+
+	/*
+	* Output Options Page
+	*/
+	function options_page()
+	{
+		require_once "options-page/options-page.php";
+	} // options_page()
+
+
+	/*
+	* Register Plugin Settings
+	*/
+	function register_settings()
+	{
+		$pagename = 'wpmfu-plugin';
+		$main_settings_page = 'wpmfu_plugin_main';
+
+		// Register Setting
+		register_setting(
+			'wpmfu_plugin_options',
+			'wpmfu_plugin_options',
+			array( &$this, 'plugin_options_validate' )
+		);
+
+		// Settings Section
+		add_settings_section(
+			$main_settings_page,
+			'',
+			array( &$this,'wpmfu_plugin_main_plugin_section_text' ),
+			$pagename
+		);
+
+		// Add Settings Field
+		add_settings_field(
+			'wpfmu_css_file',
+			'Override CSS File',
+			array( &$this, 'wpmfu_plugin_css_file_setting' ),
+			$pagename,
+			$main_settings_page
+		);
+	} // register_settings()
+
+
+	/*
+	* Handles Validation of the Plugin Options
+	*/
+	function validate_plugin_options()
+	{
+		// $newinput['text_string'] = trim($input['text_string']);
+		// return $newinput;
+	} // validate_plugin_options()
+
+
+	/*
+	* Outputs The Section Text
+	*/
+	function wpmfu_plugin_main_plugin_section_text(){
+		// echo '<p>Settings</p>';
+	} // wpmfu_plugin_main_plugin_section_text()
+
+	/*
+	* Outputs CSS File Setting
+	*/
+	function wpmfu_plugin_css_file_setting(){
+		$options = get_option( 'wpmfu_plugin_options', false );
+		// echo "<input id='wpfmu_css_file' name='wpmfu_plugin_options[css-file]' size='40' type='text' value='{$options['wpfmu_css_file']}' />";
+	} // wpmfu_plugin_css_file_setting()
 
 } // class WPMFU_Plugin
