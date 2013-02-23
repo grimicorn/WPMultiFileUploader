@@ -40,8 +40,12 @@ class WPMFU_Plugin
 	* Generate The Shortcode
 	*/
 	function shortcode( $atts ) {
-		$atts = extract( shortcode_atts( array( 'default'=>'values' ),$atts ) );
-		return '<ul id="wp_multi_file_uploader" class="unstyled" data-filecount="1" data-ajaxurl="' . site_url( 'wp-admin/admin-ajax.php' ) . '"></ul>';
+		$default_atts = array(
+			'file_types'=>'jpg|jpeg|png|gif|pdf|doc|docx|ppt|pptx|pps|ppsx|odt|xls|xlsx|mp3|m4a|ogg|wav|mp4|m4v|mov|wmv|avi|mpg|ogv|3gp|3g2'
+		);
+		$atts = extract( shortcode_atts( $default_atts,$atts ) );
+
+		return '<ul id="wp_multi_file_uploader" class="unstyled" data-filecount="1" data-types="'.$file_types.'" data-ajaxurl="'.site_url( 'wp-admin/admin-ajax.php' ).'"></ul>';
 	}
 
 	/*
