@@ -2,9 +2,9 @@
 Contributors: dholloran
 Donate link: http://danholloran.com/
 Tags: upload, form, ajax
-Requires at least: 3.3 or Higher
+Requires at least: 3.1
 Tested up to: 3.5
-Stable tag: 1.0
+Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,7 +32,8 @@ If you have any issues please submit an [issue](https://github.com/DHolloran/WPM
 None so far... If you have any issues please submit an [issue](https://github.com/DHolloran/WPMultiFileUploader/issues/new) or fix it/submit a pull request I will try to handle it ASAP. You an also contact me at [support@danholloran.com](mailto:support@danholloran.com).
 
 == Screenshots ==
-None
+1. /assets/screenshot1.png
+2. /assets/screenshot2.png
 
 == Changelog ==
 
