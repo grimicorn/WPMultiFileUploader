@@ -30,6 +30,14 @@ $wp_multi_file_uploader = new WPMFU_Plugin();
 
 
 /**
+* Plugin Options
+*/
+require_once "classes/class.wpmfu-options.php";
+$wp_options = new WPMFU_Options();
+$wp_options->init_hooks();
+
+
+/**
 *	Setup Theme/Template File Function
 */
 function wp_multi_file_uploader()
