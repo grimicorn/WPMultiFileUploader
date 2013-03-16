@@ -1,6 +1,7 @@
 jQuery(function($) {
 	$(window).load(function(){
-		var uploaderElem = $('#wp_multi_file_uploader'),
+		if ( $('#wp_multi_file_uploader').length > 0 ) {
+			var uploaderElem = $('#wp_multi_file_uploader'),
 				ajaxUrl = uploaderElem.data('ajaxurl'),
 				extensions = uploaderElem.data('types').split('|'),
 				uploader = new qq.FineUploader({
@@ -36,7 +37,7 @@ jQuery(function($) {
 					text: {
 						uploadButton: 'Upload File(s)'
 					}
-				})
-		;
+				}) ;
+		} // if()
 	}); // $(window).load()
 }(jQuery));
