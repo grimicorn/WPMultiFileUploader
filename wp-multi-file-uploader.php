@@ -1,7 +1,7 @@
 <?php
 /**
  * @package WP_Multi_File_Uploader
- * @version 1.0.0
+ * @version 1.1.0
  */
 /*
 Plugin Name: WP Multi File Uploader
@@ -28,6 +28,23 @@ register_uninstall_hook( __FILE__, array( 'WPMFU_Init', 'on_uninstall' ) );
 require_once "classes/class-wpmfu-plugin.php";
 $wp_multi_file_uploader = new WPMFU_Plugin();
 
+
+/**
+* Plugin Options
+*/
+// require_once "classes/class.wpmfu-options.php";
+// $wp_options = new WPMFU_Options();
+// $wp_options->init_hooks();
+
+/**
+* Add WPMFU Post Type
+*/
+require_once "inc/wpmfu-post-type.php";
+
+/**
+* WPMFU Form Handler
+*/
+require_once "classes/class.wpmfu-form-builder.php";
 
 /**
 *	Setup Theme/Template File Function
