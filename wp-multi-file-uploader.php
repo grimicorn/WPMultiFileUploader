@@ -12,49 +12,42 @@ Version: 1.0.0
 Author URI: http://danholloran.com/
 */
 
+/**
+* Required files
+*/
+require_once "classes/class-wpmfu-init.php";					// Handles plugin install/activate/deactivate/uninstall
+require_once "classes/class-wpmfu-plugin.php";				// Base plugin class
+require_once "inc/wpmfu-post-type.php"; 							// WPMFU Form Post Type
+require_once "classes/class.wpmfu-form-builder.php";	// Handles building the forms
 
 /**
 * Handles Activation/Deactivation/Install
 */
-require_once "classes/class-wpmfu-init.php";
 register_activation_hook( __FILE__, array( 'WPMFU_Init', 'on_activate' ) );
 register_deactivation_hook( __FILE__, array( 'WPMFU_Init', 'on_deactivate' ) );
 register_uninstall_hook( __FILE__, array( 'WPMFU_Init', 'on_uninstall' ) );
 
 
 /**
-* Instantiate Plugin Class
-*/
-require_once "classes/class-wpmfu-plugin.php";
-$wp_multi_file_uploader = new WPMFU_Plugin();
-
-
-/**
-* Plugin Options
-*/
-// require_once "classes/class.wpmfu-options.php";
-// $wp_options = new WPMFU_Options();
-// $wp_options->init_hooks();
-
-/**
-* Add WPMFU Post Type
-*/
-require_once "inc/wpmfu-post-type.php";
-
-/**
-* WPMFU Form Handler
-*/
-require_once "classes/class.wpmfu-form-builder.php";
-
-/**
 *	Setup Theme/Template File Function
 */
 function wp_multi_file_uploader()
 {
-	require_once "classes/class-wpmfu-plugin.php";
-	$wp_multi_file_uploader = new WPMFU_Plugin();
-	$wp_multi_file_uploader->output_form();
+	global $wpmfu_plugin;
+	echo $wpmfu_plugin->build_form();
 } // wp_multi_file_uploader()
+
+
+/*
+* Setup The Shortcode
+*/
+function wp_multi_file_uploader_shortcode( $atts ) {
+	$default_atts = array();
+	$atts = extract( shortcode_atts( $default_atts, $atts ) );
+	global $wpmfu_plugin;
+	return $wpmfu_plugin->build_form( $atts );
+}
+add_shortcode( 'wp-multi-file-uploader', 'wp_multi_file_uploader_shortcode' );
 
 
 /**

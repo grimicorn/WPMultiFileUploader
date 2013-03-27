@@ -4,7 +4,6 @@ class WPMFU_Plugin
 
 	protected $inputName = 'qqfile';
 
-
 	/*
 	* Constructor
 	*/
@@ -20,32 +19,13 @@ class WPMFU_Plugin
 	{
 		// Styles & Scripts
 		add_action( 'wp_enqueue_scripts', array( __CLASS__, 'enqueue_scripts_styles' ) );
-		// Shortcode
-		add_shortcode( 'wp-multi-file-uploader', array( __CLASS__, 'shortcode' ) );
 	} // init_hooks()
 
 
-
-	/*
-	* Generate The Shortcode
+	/**
+	* Build the uploader form
 	*/
-	public function shortcode( $atts ) {
-		$default_atts = array();
-		$atts = extract( shortcode_atts( $default_atts,$atts ) );
-
-		return $this->build_form();
-	}
-
-	/*
-	* Output The Upload Form
-	*/
-	function output_form()
-	{
-		echo $this->build_form();
-	} // output_form()
-
-
-	function build_form()
+	function build_form( $attrs = array() )
 	{
 		$form = '<ul id="wp_multi_file_uploader" class="unstyled" data-filecount="1" data-ajaxurl="' . site_url( 'wp-admin/admin-ajax.php' ) . '"></ul>';
 		return $form;
@@ -66,3 +46,5 @@ class WPMFU_Plugin
 
 
 } // class WPMFU_Plugin
+
+$wpmfu_plugin = new WPMFU_Plugin();
