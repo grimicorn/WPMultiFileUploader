@@ -7,7 +7,7 @@ class WPMFU_Plugin
 	/*
 	* Constructor
 	*/
-	public function __construct() {
+	public function __construct( $config = array() ) {
 		$this->init_hooks();
 	} // __construct()
 

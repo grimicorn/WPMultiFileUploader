@@ -10,7 +10,7 @@ class WPMFU_Form_Builder extends WPMFU_Plugin
 	*/
 	function __construct()
 	{
-		# code...
+		parent::__construct();
 	} // __constuct
 
 

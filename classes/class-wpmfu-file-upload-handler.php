@@ -8,7 +8,9 @@ class WPFMU_FileUploadHandler extends WPMFU_Plugin
 	/*
 	* Constructor
 	*/
-	function __construct(){}
+	function __construct(){
+		parent::__construct();
+	}
 
 
 		/*
