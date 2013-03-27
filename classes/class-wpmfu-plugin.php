@@ -33,7 +33,7 @@ class WPMFU_Plugin
 		$default_atts = array();
 		$atts = extract( shortcode_atts( $default_atts,$atts ) );
 
-		return '<ul id="wp_multi_file_uploader" class="unstyled" data-filecount="1" data-ajaxurl="'.site_url( 'wp-admin/admin-ajax.php' ).'"></ul>';
+		return $this->build_form();
 	}
 
 	/*
@@ -41,8 +41,15 @@ class WPMFU_Plugin
 	*/
 	function output_form()
 	{
-		echo '<ul id="wp_multi_file_uploader" class="unstyled" data-filecount="1" data-ajaxurl="' . site_url( 'wp-admin/admin-ajax.php' ) . '"></ul>';
+		echo $this->build_form();
 	} // output_form()
+
+
+	function build_form()
+	{
+		$form = '<ul id="wp_multi_file_uploader" class="unstyled" data-filecount="1" data-ajaxurl="' . site_url( 'wp-admin/admin-ajax.php' ) . '"></ul>';
+		return $form;
+	}
 
 
 	/*
@@ -53,7 +60,7 @@ class WPMFU_Plugin
 		$version = '1.0';
 		wp_register_script( 'wpmfu_script', plugins_url( 'assets/js/fineuploader.min.js' , dirname(__FILE__) ), array( 'jquery' ), $version, true );
 		wp_enqueue_script( 'wpmfu_script' );
-		wp_register_style( 'wpmfu_style', plugins_url( 'assets/css/fineuploader.css' , dirname(__FILE__) ), $deps, $version );
+		wp_register_style( 'wpmfu_style', plugins_url( 'assets/css/fineuploader.css' , dirname(__FILE__) ), null, $version );
 		wp_enqueue_style( 'wpmfu_style' );
 	} // enqueue_scripts_styles()
 
