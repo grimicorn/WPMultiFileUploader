@@ -2,13 +2,13 @@
 /**
 * WPMFU Form Builder
 */
-class WPMFU_Form_Builder extends WPMFU_Plugin
+class WPMFU_Form_Builder extends WPMFU_HTML
 {
 
 	/**
 	* Constructor
 	*/
-	function __construct()
+	function __construct( $config = array() )
 	{
 		parent::__construct();
 	} // __constuct
@@ -17,9 +17,9 @@ class WPMFU_Form_Builder extends WPMFU_Plugin
 	/**
 	* Opens the form
 	*/
-	public function form_open( $action = '?')
+	public function form_open( $form_id = 1, $action = '?')
 	{
-		return '<form action="'.$action.'" method="post" accept-charset="utf-8">';
+		return '<form action="'.$action.'" method="post" id="wpmfu_form_'.$form_id.'" class="wpmfu-form" accept-charset="utf-8">';
 	} // form_open()
 
 
@@ -34,47 +34,88 @@ class WPMFU_Form_Builder extends WPMFU_Plugin
 	/**
 	* Multi Uploader
 	*/
-	public function multi_uploader()
+	public function multi_uploader( $wrap_li = true )
 	{
-		return $this->build_form();
-	}
+		$html = '';
+		$form = $this->build_form();
+		if ( $wrap_li ) {
+			$html .= $this->li( $form );
+		} //if()
+
+		return $html;
+	} // multi_uploader()
+
 
 	/**
 	* Submit Button
 	*/
 	public function submit( $attrs = array() )
 	{
-		$default_attrs = array(
-			'type'					=>	'submit',
-			'id'						=>	'wpmfu_submit',
-			'value'					=>	'Submit',
-			'class'					=>	'wpmfu-input wpmfu-submit',
-			'output_label'	=>	false
-		);
-		extract( shortcode_atts( $default_attrs, $attrs ) );
+		$default_attrs = $this->default_attrs();
+		$default_attrs['type'] =	'submit';
+		$default_attrs['id'] =	'wpmfu_submit';
+		$default_attrs['value'] =	'Submit';
+		$default_attrs['class'] =	'wpmfu-input wpmfu-submit';
+		$default_attrs['output_label']	=	false;
+		return $this->input( shortcode_atts( $default_attrs, $attrs ) );
 	} // submit()
 
 
 	/**
-	* Input field
+	* Hidden Input
+	*/
+	public function hidden( $attrs = array() )
+	{
+		$default_attrs = $default_attrs = $this->default_attrs();
+		$default_attrs['type'] =	'hidden';
+		$default_attrs['class'] = 'wpmfu-input wpmfu-hidden pull-left';
+		$default_attrs['output_label'] = false;
+		return $this->input( shortcode_atts( $default_attrs, $attrs ) );
+	} // checkbox()
+
+
+	/**
+	* Radio Input
+	*/
+	public function radio( $attrs = array() )
+	{
+		$default_attrs = $default_attrs = $this->default_attrs();
+		$default_attrs['type'] = 'radio';
+		$default_attrs['class'] = 'wpmfu-input wpmfu-checkbox pull-left';
+		return $this->input( shortcode_atts( $default_attrs, $attrs ) );
+	} // checkbox()
+
+
+	/**
+	* Checkbox Input
+	*/
+	public function checkbox( $attrs = array() )
+	{
+		$default_attrs = $default_attrs = $this->default_attrs();
+		$default_attrs['type']	= 'checkbox';
+		$default_attrs['class']	= 'wpmfu-input wpmfu-checkbox';
+		return $this->input( shortcode_atts( $default_attrs, $attrs ) );
+	} // checkbox()
+
+
+	/**
+	* Text Field Input
+	*/
+	public function text( $attrs = array() )
+	{
+		$default_attrs = $default_attrs = $this->default_attrs();
+		$default_attrs['type'] = 'text';
+		$default_attrs['class'] = 'wpmfu-input wpmfu-text';
+		return $this->input( shortcode_atts( $default_attrs, $attrs ) );
+	} // text()
+
+
+	/**
+	* Generic Input field
 	*/
 	public function input( $attrs = array() )
 	{
-		$default_attrs = array(
-			'type'					=>	'text',
-			'id'						=>	'',
-			'placeholder'		=>	null,
-			'value'					=>	'',
-			'disabled'			=>	false,
-			'size'					=> 	null,
-			'class'					=>	'wpmfu-input',
-			'maxlength'			=>	null,
-			'checked'				=>	false,
-			'label_text'		=>	'',
-			'label_class'		=>	'wpmfu-label',
-			'output_label'	=>	true
-		);
-		extract( shortcode_atts( $default_attrs, $attrs ) );
+		extract( shortcode_atts( $this->default_attrs(), $attrs ) );
 
 		// Get the Label
 		$label = '';
@@ -82,16 +123,19 @@ class WPMFU_Form_Builder extends WPMFU_Plugin
 			$label = $this->label(array(
 				'id'					=>	$id,
 				'label_text'	=>	$label_text,
-				'label_class'	=>	$label_class
+				'label_class'	=>	$label_class,
+				'label_after'	=>	$label_after
 			));
 		} // if($label)
 
+		// For checkbox and radio buttons
 		if ( $type == 'checkbox' OR $type == 'radio' ) {
 			$checked = ( $checked )  ? " checked='{$checked}' " : '';
 		} else {
 			$checked = '';
 		}
 
+		// Build the input field
 		$input = '';
 		$input .= "<input";
 		$input .= " type='{$type}'";
@@ -105,25 +149,25 @@ class WPMFU_Form_Builder extends WPMFU_Plugin
 		if ( !is_null( $size ) ) $input .= " size='{$size}'";
 		$input .= $checked;
 		$input .= ">";
-		return $label . $input;
+
+		// Put Together the label and input
+		$html = '';
+		$nl = "\n";
+		if ( $label_after ) {
+			$html .= $input . $nl;
+			$html .= $label . $nl;
+		} else {
+			$html .= $label . $nl ;
+			$html .= $input . $nl;
+		} // if/else()
+
+		if ( $wrap_li ) {
+			$html = $this->li( $html );
+		} // if()
+
+		return $html;
+
 	} // input()
-
-
-	/**
-	* Text Field - Input Alias
-	*/
-	public function text( $attrs = array() )
-	{
-		$default_attrs = array(
-			'type'					=>	'text',
-			'id'						=>	'',
-			'placeholder'		=>	'',
-			'value'					=>	'',
-			'class'					=>	'wpmfu-input wpmfu-text',
-			'label_text'		=>	''
-		);
-		return $this->input( shortcode_atts( $default_attrs, $attrs ) );
-	} // text()
 
 
 	/**
@@ -134,9 +178,16 @@ class WPMFU_Form_Builder extends WPMFU_Plugin
 		$default_attrs = array(
 			'label_text'		=>	'',
 			'label_class'		=>	'wpmfu-label',
-			'id'						=>	''
+			'id'						=>	'',
+			'label_after'		=>	false
 		);
 		extract( shortcode_atts($default_attrs, $attrs ) );
+
+		// Needed if the label is after the form
+		if ( $label_after )
+			$label_class .= ' wpmfu-label-after';
+
+		// Build Label
 		$label = '';
 		$label .= "<label for='{$id}' class='{$label_class}'>{$label_text}</label>";
 
@@ -144,4 +195,40 @@ class WPMFU_Form_Builder extends WPMFU_Plugin
 	} // label()
 
 
+	/**
+	* Default Attributes
+	*/
+	protected function default_attrs()
+	{
+		return array(
+			'type'					=>	'text',
+			'id'						=>	'',
+			'placeholder'		=>	null,
+			'value'					=>	'',
+			'disabled'			=>	false,
+			'size'					=> 	null,
+			'class'					=>	'wpmfu-input pull-left',
+			'maxlength'			=>	null,
+			'checked'				=>	false,
+			'label_text'		=>	'',
+			'label_class'		=>	'wpmfu-label pull-left',
+			'output_label'	=>	true,
+			'label_after'		=>	false,
+			'wrap_li'				=>	true
+		);
+	} // default_attrs()
+
+
+	/**
+	* HTML
+	*/
+	public function html( $html, $wrap_li = true ){
+		if ( $wrap_li ) {
+			$html .= $this->li( $html );
+		} // if()
+		return $html;
+	}
+
 } // end class WPMFU_Form_Builder()
+
+$wpmfu_form_builder = new WPMFU_Form_Builder();
