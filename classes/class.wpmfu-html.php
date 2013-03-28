@@ -1,7 +1,10 @@
 <?php
 /**
-* WPMFU HTML
-*/
+ *	@package WPMFU_HTML
+ *	@version 1.1.0
+ *	@author Dan Holloran
+ *	@copyright GPLv2 (or later)
+ */
 class WPMFU_HTML extends WPMFU_Plugin
 {
 	/**

@@ -1,6 +1,13 @@
 <?php
-// == WPMFU Form Post Type ==================================================
-// Create WPMFU Form Post Type
+/**
+ *	@version 1.1.0
+ *	@author Dan Holloran
+ *	@copyright GPLv2 (or later)
+ */
+
+/**
+ * Create WPMFU Form Post Type
+ */
 function create_wpmfu_form_post_type()
 {
 	// Setup the wpmfu form post type labels

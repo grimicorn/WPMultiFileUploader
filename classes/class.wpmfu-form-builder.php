@@ -1,7 +1,10 @@
 <?php
 /**
-* WPMFU Form Builder
-*/
+ *	@package WPMFU_Form_Builder
+ *	@version 1.1.0
+ *	@author Dan Holloran
+ *	@copyright GPLv2 (or later)
+ */
 class WPMFU_Form_Builder extends WPMFU_HTML
 {
 

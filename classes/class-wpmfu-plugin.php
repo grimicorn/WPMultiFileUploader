@@ -1,4 +1,10 @@
 <?php
+/**
+ *	@package WPMFU_Plugin
+ *	@version 1.1.0
+ *	@author Dan Holloran
+ *	@copyright GPLv2 (or later)
+ */
 class WPMFU_Plugin
 {
 
