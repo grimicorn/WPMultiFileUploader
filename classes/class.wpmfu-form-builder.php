@@ -2,6 +2,7 @@
 /**
  *	@package WPMFU_Form_Builder
  *	@version 1.1.0
+ *	@since 1.1.0
  *	@author Dan Holloran
  *	@copyright GPLv2 (or later)
  */
@@ -10,6 +11,8 @@ class WPMFU_Form_Builder extends WPMFU_HTML
 
 	/**
 	* Constructor
+	*
+	*	@since 1.1.0
 	*/
 	function __construct( $config = array() )
 	{
@@ -19,6 +22,8 @@ class WPMFU_Form_Builder extends WPMFU_HTML
 
 	/**
 	* Opens the form
+	*
+	*	@since 1.1.0
 	*/
 	public function form_open( $form_id = 1, $action = '?')
 	{
@@ -28,6 +33,8 @@ class WPMFU_Form_Builder extends WPMFU_HTML
 
 	/**
 	* Closes the form
+	*
+	*	@since 1.1.0
 	*/
 	public function form_close()
 	{
@@ -36,6 +43,8 @@ class WPMFU_Form_Builder extends WPMFU_HTML
 
 	/**
 	* Multi Uploader
+	*
+	*	@since 1.1.0
 	*/
 	public function multi_uploader( $wrap_li = true )
 	{
@@ -51,6 +60,8 @@ class WPMFU_Form_Builder extends WPMFU_HTML
 
 	/**
 	* Submit Button
+	*
+	*	@since 1.1.0
 	*/
 	public function submit( $attrs = array() )
 	{
@@ -66,6 +77,8 @@ class WPMFU_Form_Builder extends WPMFU_HTML
 
 	/**
 	* Hidden Input
+	*
+	*	@since 1.1.0
 	*/
 	public function hidden( $attrs = array() )
 	{
@@ -79,6 +92,8 @@ class WPMFU_Form_Builder extends WPMFU_HTML
 
 	/**
 	* Radio Input
+	*
+	*	@since 1.1.0
 	*/
 	public function radio( $attrs = array() )
 	{
@@ -91,6 +106,8 @@ class WPMFU_Form_Builder extends WPMFU_HTML
 
 	/**
 	* Checkbox Input
+	*
+	*	@since 1.1.0
 	*/
 	public function checkbox( $attrs = array() )
 	{
@@ -103,6 +120,8 @@ class WPMFU_Form_Builder extends WPMFU_HTML
 
 	/**
 	* Text Field Input
+	*
+	*	@since 1.1.0
 	*/
 	public function text( $attrs = array() )
 	{
@@ -115,6 +134,8 @@ class WPMFU_Form_Builder extends WPMFU_HTML
 
 	/**
 	* Generic Input field
+	*
+	*	@since 1.1.0
 	*/
 	public function input( $attrs = array() )
 	{
@@ -175,6 +196,8 @@ class WPMFU_Form_Builder extends WPMFU_HTML
 
 	/**
 	* Label
+	*
+	*	@since 1.1.0
 	*/
 	public function label( $attrs = array() )
 	{
@@ -200,6 +223,8 @@ class WPMFU_Form_Builder extends WPMFU_HTML
 
 	/**
 	* Default Attributes
+	*
+	*	@since 1.1.0
 	*/
 	protected function default_attrs()
 	{
@@ -224,6 +249,8 @@ class WPMFU_Form_Builder extends WPMFU_HTML
 
 	/**
 	* HTML
+	*
+	*	@since 1.1.0
 	*/
 	public function html( $html, $wrap_li = true ){
 		if ( $wrap_li ) {

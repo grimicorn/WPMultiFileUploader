@@ -13,6 +13,9 @@ Version: 1.1.0
 Author URI: http://danholloran.com/
 */
 
+define( 'WPMFU_VERSION', '1.1.0' );
+
+
 /**
 * Required files
 */
@@ -32,6 +35,7 @@ register_uninstall_hook( __FILE__, array( 'WPMFU_Init', 'on_uninstall' ) );
 
 /**
 *	Setup Theme/Template File Function
+* @since 1.0.0
 */
 function wp_multi_file_uploader()
 {
@@ -40,8 +44,10 @@ function wp_multi_file_uploader()
 } // wp_multi_file_uploader()
 
 
-/*
+/**
 * Setup The Shortcode
+*
+* @since 1.0.0
 */
 function wp_multi_file_uploader_shortcode( $atts ) {
 	$default_atts = array();
@@ -54,6 +60,8 @@ add_shortcode( 'wp-multi-file-uploader', 'wp_multi_file_uploader_shortcode' );
 
 /**
 * AJAX Callback
+*
+* @since 1.0.0
 */
 add_action( 'wp_ajax_wp_multi_file_uploader', 'wp_multi_file_uploader_callback' );
 add_action( 'wp_ajax_nopriv_wp_multi_file_uploader', 'wp_multi_file_uploader_callback' );

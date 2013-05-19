@@ -2,6 +2,7 @@
 /**
  *	@package WPMFU_Plugin
  *	@version 1.1.0
+ *	@since 1.0.0
  *	@author Dan Holloran
  *	@copyright GPLv2 (or later)
  */
@@ -9,17 +10,21 @@ class WPMFU_Plugin
 {
 
 	protected $inputName = 'qqfile';
-	public $version = '1.1.0';
-	/*
+
+	/**
 	* Constructor
+	*
+	*	@since 1.0.0
 	*/
 	public function __construct( $config = array() ) {
 		$this->init_hooks();
 	} // __construct()
 
 
-	/*
+	/**
 	* Init Hooks
+	*
+	* @since 1.0.0
 	*/
 	public function init_hooks()
 	{
@@ -33,6 +38,8 @@ class WPMFU_Plugin
 
 	/**
 	* Build the uploader form
+	*
+	* @since 1.0.0
 	*/
 	function build_form( $attrs = array() )
 	{
@@ -41,8 +48,10 @@ class WPMFU_Plugin
 	}
 
 
-	/*
+	/**
 	* Enqueue Scripts & Styles
+	*
+	* @since 1.0.0
 	*/
 	public function enqueue_scripts_styles()
 	{
@@ -54,8 +63,10 @@ class WPMFU_Plugin
 	} // enqueue_scripts_styles()
 
 
-	/*
+	/**
 	* Enqueue Administrator Scripts & Styles
+	*
+	*	@since 1.0.0
 	*/
 	public function enqueue_admin_scripts_styles()
 	{

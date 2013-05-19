@@ -1,6 +1,7 @@
 <?php
 /**
  *	@version 1.1.0
+ * 	@since 1.0.0
  *	@author Dan Holloran
  *	@copyright GPLv2 (or later)
  */

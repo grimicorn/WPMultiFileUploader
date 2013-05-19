@@ -1,20 +1,28 @@
 <?php
 /**
-*
-*/
+ *	@package WPMFU_Plugin
+ *	@version 1.1.0
+ *	@since 1.0.0
+ *	@author Dan Holloran
+ *	@copyright GPLv2 (or later)
+ */
 class WPFMU_FileUploadHandler extends WPMFU_Plugin
 {
 
-	/*
+	/**
 	* Constructor
+	*
+	*	@since 1.0.0
 	*/
 	function __construct(){
 		parent::__construct();
 	}
 
 
-		/*
+	/**
 	* Process the upload.
+	*
+	*	@since 1.0.0
 	*/
 	public function handle_upload(){
 		// Get size and name
@@ -38,8 +46,10 @@ class WPFMU_FileUploadHandler extends WPMFU_Plugin
 	} // handle_upload
 
 
-	/*
+	/**
 	* Handle Attachment
+	*
+	* @since 1.0.0
 	*/
 	public function add_attachment( $url )
 	{
@@ -66,8 +76,10 @@ class WPFMU_FileUploadHandler extends WPMFU_Plugin
 	} //add_attachment()
 
 
-	/*
+	/**
 	* Handle Response
+	*
+	*	@since 1.0.0
 	*/
 	public function handle_response()
 	{
