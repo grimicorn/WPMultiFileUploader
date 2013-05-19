@@ -2,6 +2,7 @@
 if ( ! class_exists('WPMFU_Init' ) ) :
 /**
  * This class triggers functions that run during activation/deactivation & uninstallation
+ * NOTE: All comments are just my *suggestions*.
  */
 class WPMFU_Init
 {
