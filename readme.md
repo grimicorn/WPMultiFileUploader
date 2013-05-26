@@ -5,7 +5,12 @@ Wordpress media gallery.  Includes a shortcode `[wp-multi-file-uploader]` for us
 
 **Plugin Home Page:** [http://wordpress.org/extend/plugins/wp-multi-file-uploader/](http://wordpress.org/extend/plugins/wp-multi-file-uploader/)
 
-**What this plugin does not do:** This plugin does not make sure that the user is allowed to add a file but it does restrict the [file types](http://codex.wordpress.org/Uploading_Files#About_Uploading_Files_on_Dashboard) to be the same as Wordpress and file size(2mb).  It also does not play nice at the moment with Wordpress form building plugins, if you integrate it with one please let me know and submit a pull request this is a feature I would like to eventually get integrated.
+**What this plugin does not do:** This plugin does not make sure that the user is allowed to add a file but it does restrict the file type to the WordPress supported file types by default, this has been updated to dynamically get the supported file types for your WordPress install.  The file upload size limit is now restricted to either the WordPress or PHP INI limit this can be changed.  It also does not play nice at the moment with Wordpress form building plugins, if you integrate it with one please let me know and submit a pull request this is a feature I would like to eventually get integrated.
+
+***Both the short code and the function accept 2 parameters.***  
+`allowed_mime_types` accepts a comma separated white space sensitive list, ex: jpg,png,gif  
+`max_file_size` accepts the file size in megabytes ex: 4 = 4mb
+For more information see the examples [below](#wpmfu_examples).
 
 **Thanks to:** This project incorporates the excellent file uploader at [https://github.com/valums/file-uploader](https://github.com/valums/file-uploader), if your project is included and I do not have you added please let me know, thank you.
 
@@ -28,12 +33,14 @@ To get started with WP Multi File Uploader you can download it directly from [Gi
 4. For each file uploaded the plugin will add a hidden input field `name="wp_multi_file_uploader_[NUMBER]"` with [NUMBER] representing the amount of files starting at 1 and the value will be the uploads attachment id
 
 ##Examples
+<div id="wpmfu_examples"></div>
 ###Example Using The Shortcode
 	<!-- In The Post Editor -->
 	<form action="?" method="post" accept-charset="utf-8">
 		<label for="unique_name">Your Name:</label>
 		<input type="text" name="unique_name" id="unique_name" value="" placeholder="Your Name">
-		[wp-multi-file-uploader]
+		<!-- Accepts .jpg files only with a max file size of 3mb -->
+		[wp-multi-file-uploader allowed_mime_types="jpg" max_file_size="3"]
 		<input type="submit" name="submit" value="Submit">
 	</form>
 	<!-- END In The Post Editor -->
@@ -43,7 +50,10 @@ To get started with WP Multi File Uploader you can download it directly from [Gi
 	<form action="?" method="post" accept-charset="utf-8">
 		<label for="unique_name">Your Name:</label>
 		<input type="text" name="unique_name" id="unique_name" value="" placeholder="Your Name">
-		<?php wp_multi_file_uploader(); ?>
+		<?php wp_multi_file_uploader(array(
+			'allowed_mime_types'	=>	'jpg,png,gif', // accepts .jpg, .png, .gif file types
+			'max_file_size'			=>	'32' // 32mb
+		)); ?>
 		<input type="submit" name="submit" value="Submit">
 	</form>
 	<!-- END In a Template File -->
