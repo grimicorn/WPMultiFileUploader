@@ -10,15 +10,14 @@ jQuery(function($) {
 						endpoint: ajaxUrl,
 						// Admin AJAX Param
 						params: {
-							action: 'wp_multi_file_uploader'
+							action: 'wp_multi_file_uploader',
+							postId: uploaderElem.data('postid')
 						},
 						paramsInBody: true
 					},
 					validation: {
-						// WordPress Allowed Extensions
-						allowedExtensions:['jpg', 'jpeg', 'png', 'gif', 'pdf', 'doc', 'docx', 'ppt', 'pptx', 'pps', 'ppsx', 'odt', 'xls', 'xlsx', 'mp3', 'm4a', 'ogg', 'wav', 'mp4', 'm4v', 'mov', 'wmv', 'avi', 'mpg', 'ogv', '3gp', '3g2'],
-						// WordPress Max Upload File Size
-						sizeLimit: 2 * 1024 *1024
+						allowedExtensions: uploaderElem.data('mimetypes').split(','),
+						sizeLimit: parseInt( uploaderElem.data('maxsize'), 10 )	 * 1024 * 1024 // Turn Megabytes into Bytes
 					},
 					callbacks: {
 						onComplete: function(id, fileName, response) {

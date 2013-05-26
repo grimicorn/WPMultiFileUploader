@@ -43,9 +43,23 @@ class WPMFU_Plugin
 	*/
 	function build_form( $attrs = array() )
 	{
-		$form = '<ul id="wp_multi_file_uploader" class="unstyled" data-filecount="1" data-ajaxurl="' . site_url( 'wp-admin/admin-ajax.php' ) . '"></ul>';
+		extract( $attrs );
+		global $post;
+
+		$allowed_mime_types = ( gettype( $allowed_mime_types ) == 'array' ) ? implode( ',', $allowed_mime_types) : $allowed_mime_types;
+		$form = '';
+		$form .= '<ul ';
+		$form .= 'id="wp_multi_file_uploader" ';
+		$form .= 'class="unstyled" ';
+		$form .= 'data-filecount="1" ';
+		$form .= 'data-mimetypes="'.$allowed_mime_types.'" ';
+		$form .= 'data-maxsize="'.$max_file_size.'" ';
+		$form .= 'data-postid="'.$post->ID.'" ';
+		$form .= 'data-ajaxurl="' . site_url( 'wp-admin/admin-ajax.php' ) . '">';
+		$form .= '</ul>';
+
 		return $form;
-	}
+	} // build_form()
 
 
 	/**
@@ -56,9 +70,9 @@ class WPMFU_Plugin
 	public function enqueue_scripts_styles()
 	{
 		global $wpmfu_plugin;
-		wp_register_script( 'wpmfu_script', plugins_url( 'assets/js/fineuploader.min.js' , dirname(__FILE__) ), array( 'jquery' ), $wpmfu_plugin->version, true );
+		wp_register_script( 'wpmfu_script', plugins_url( 'assets/js/fineuploader.min.js' , dirname(__FILE__) ), array( 'jquery' ), WPMFU_VERSION, true );
 		wp_enqueue_script( 'wpmfu_script' );
-		wp_register_style( 'wpmfu_style', plugins_url( 'assets/css/wpmfu-plugin.css' , dirname(__FILE__) ), null, $wpmfu_plugin->version );
+		wp_register_style( 'wpmfu_style', plugins_url( 'assets/css/wpmfu-plugin.css' , dirname(__FILE__) ), null, WPMFU_VERSION );
 		wp_enqueue_style( 'wpmfu_style' );
 	} // enqueue_scripts_styles()
 
@@ -74,7 +88,7 @@ class WPMFU_Plugin
 		global $post;
 
 		// Make sure we are on the correct page
-		if ( $post->post_type != 'wpmfu_forms_type') return false;
+		if ( isset( $post ) AND $post->post_type != 'wpmfu_forms_type') return false;
 
 		// Enqueue scripts and styles
 		wp_enqueue_script( 'jquery-ui-core' );
