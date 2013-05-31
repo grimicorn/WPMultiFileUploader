@@ -29,10 +29,10 @@ class WPMFU_Plugin
 	public function init_hooks()
 	{
 		// Front End Styles & Scripts
-		add_action( 'wp_enqueue_scripts', array( __CLASS__, 'enqueue_scripts_styles' ) );
+		add_action( 'wp_enqueue_scripts', array( &$this, 'enqueue_scripts_styles' ) );
 
 		// Admin Styles & Scripts
-		add_action( 'admin_enqueue_scripts', array( __CLASS__, 'enqueue_admin_scripts_styles' ) );
+		add_action( 'admin_enqueue_scripts', array( &$this, 'enqueue_admin_scripts_styles' ) );
 	} // init_hooks()
 
 
