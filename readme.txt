@@ -4,7 +4,7 @@ Donate link: http://danholloran.com/
 Tags: upload, form, ajax
 Requires at least: 3.5
 Tested up to: 3.5.1
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -48,6 +48,9 @@ Initial Release
 * Added support for overriding default accepted file types.
 * Added support for overriding default file size.
 * Misc. clean up
+
+== 1.1.1 ==
+* Fixed extract error with shortcode
 
 == Upgrade Notice ==
 
