@@ -21,7 +21,7 @@ define( 'WPMFU_VERSION', '1.1.0' );
 */
 require_once "classes/class-wpmfu-init.php";					// Handles plugin install/activate/deactivate/uninstall
 require_once "classes/class-wpmfu-plugin.php";				// Base plugin class
-require_once "inc/wpmfu-post-type.php"; 							// WPMFU Form Post Type
+// require_once "inc/wpmfu-post-type.php"; 							// WPMFU Form Post Type
 require_once "classes/class.wpmfu-html.php";					// Handles common html tasks
 require_once "classes/class.wpmfu-form-builder.php";	// Handles building the forms
 
