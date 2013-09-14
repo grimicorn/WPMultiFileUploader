@@ -55,6 +55,9 @@ Initial Release
 == 1.1.2 ==
 * Fixed image uploads not creating all the attachment sizes
 
+== 1.1.3 ==
+* Fixed issue with upload failing for video files.  Fixed issue with not creating correct image sizes.
+
 == Upgrade Notice ==
 
 = 1.0.0 =
@@ -68,3 +71,6 @@ Fixed extract error with shortcode
 
 == 1.1.2 ==
 Fixed image uploads not creating all the attachment sizes
+
+== 1.1.3 ==
+Fixed issue with upload failing for video files.  Fixed issue with not creating correct image sizes.
