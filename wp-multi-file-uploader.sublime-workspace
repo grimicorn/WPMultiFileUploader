@@ -1,0 +1,1511 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"function",
+				"function_exists"
+			],
+			[
+				"cat",
+				"catParent"
+			],
+			[
+				"catP",
+				"catParentVal"
+			],
+			[
+				"input",
+				"input	input - submit"
+			],
+			[
+				"short",
+				"Shortcode"
+			],
+			[
+				"implo",
+				"implode()"
+			],
+			[
+				"var_dum",
+				"var_dump()"
+			],
+			[
+				"empt",
+				"empty()"
+			],
+			[
+				"mim",
+				"mime_type"
+			],
+			[
+				"allw",
+				"allowed_mime_types"
+			],
+			[
+				"explo",
+				"explode()"
+			],
+			[
+				"array_merg",
+				"array_merge()"
+			],
+			[
+				"allowed",
+				"allowed_mime_types"
+			],
+			[
+				"get_allowed",
+				"get_allowed_mime_types"
+			],
+			[
+				"ex",
+				"existing_mimes"
+			],
+			[
+				"commi",
+				"Commits"
+			],
+			[
+				"lat",
+				"latest_commit_dates"
+			],
+			[
+				"is_a",
+				"is_array"
+			],
+			[
+				"commit",
+				"commits_info"
+			],
+			[
+				"widget",
+				"widget_content"
+			],
+			[
+				"comm",
+				"commit"
+			],
+			[
+				"wid",
+				"widget_content"
+			],
+			[
+				"widg",
+				"widget_contents"
+			],
+			[
+				"isset",
+				"isset()"
+			],
+			[
+				"func",
+				"function_exists()"
+			],
+			[
+				"img_si",
+				"img_sizes"
+			],
+			[
+				"att",
+				"attachments"
+			],
+			[
+				"get_post_thu",
+				"get_the_post_thumbnail"
+			],
+			[
+				"array",
+				"array()"
+			],
+			[
+				"get_curr",
+				"get_current_screen"
+			],
+			[
+				"round",
+				"round()"
+			],
+			[
+				"star",
+				"start_width"
+			],
+			[
+				"crop_src",
+				"crop_src_width"
+			],
+			[
+				"image",
+				"image_width"
+			],
+			[
+				"org",
+				"orig_h"
+			],
+			[
+				"crop",
+				"cropHeight"
+			],
+			[
+				"img",
+				"imgWidth"
+			],
+			[
+				"te",
+				"text"
+			],
+			[
+				"ima",
+				"image_style"
+			],
+			[
+				"wp_get_att",
+				"wp_get_attachment_image_src"
+			],
+			[
+				"attac",
+				"attachments"
+			],
+			[
+				"butt",
+				"button_added"
+			],
+			[
+				"del",
+				"delete"
+			],
+			[
+				"global",
+				"global_settings"
+			],
+			[
+				"glob",
+				"global_settings"
+			],
+			[
+				"form",
+				"form_fields"
+			],
+			[
+				"geT_ps",
+				"get_posts_args"
+			],
+			[
+				"dis",
+				"disabled_post_types"
+			],
+			[
+				"arr",
+				"array()"
+			],
+			[
+				"res",
+				"resize_crop_selection"
+			],
+			[
+				"imp",
+				"implode()"
+			],
+			[
+				"atta",
+				"attachment"
+			],
+			[
+				"var_d",
+				"var_dump()"
+			],
+			[
+				"get_he",
+				"get_header"
+			],
+			[
+				"save",
+				"saved"
+			],
+			[
+				"im",
+				"img_src_uri"
+			],
+			[
+				"extr",
+				"extract()"
+			],
+			[
+				"base",
+				"basename"
+			],
+			[
+				"str_r",
+				"str_replace"
+			],
+			[
+				"upla",
+				"upload_dir"
+			],
+			[
+				"thumb",
+				"thumb_h"
+			],
+			[
+				"src",
+				"src_w"
+			],
+			[
+				"path",
+				"pathinfo"
+			],
+			[
+				"upload",
+				"upload_dir"
+			],
+			[
+				"pathinfo",
+				"pathinfo()"
+			],
+			[
+				"dst",
+				"dst_file"
+			],
+			[
+				"dat",
+				"data"
+			],
+			[
+				"get_tem",
+				"get_template_directory_uri"
+			],
+			[
+				"wp_en",
+				"wp_enqueue_style"
+			],
+			[
+				"geT_pos",
+				"get_post"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"get_post_ty",
+				"get_post_type_object"
+			],
+			[
+				"titl",
+				"titleSelector"
+			],
+			[
+				"no",
+				"wpba_nonce"
+			],
+			[
+				"key",
+				"key_count_global"
+			],
+			[
+				"link",
+				"linkParent"
+			],
+			[
+				"arry",
+				"array"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"ech",
+				"echo"
+			],
+			[
+				"wpba",
+				"wpba_wp_settings_api"
+			],
+			[
+				"post",
+				"post_type_options"
+			],
+			[
+				"post_",
+				"post_type_disable"
+			],
+			[
+				"post_t",
+				"post_type_options"
+			],
+			[
+				"ajax",
+				"ajaxData"
+			],
+			[
+				"wp_regi",
+				"wp_register_script"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<br />\n<b>Warning</b>:  Cannot unset offset in a non-array variable in <b>/Applications/MAMP/htdocs/home-sites/plugin-dev/wp-admin/includes/image.php</b> on line <b>154</b><br />\n<br />\n<b>Warning</b>:  Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/home-sites/plugin-dev/wp-admin/includes/image.php:154) in <b>/Applications/MAMP/htdocs/home-sites/plugin-dev/wp-content/plugins/wp-multi-file-uploader/classes/class-wpmfu-file-upload-handler.php</b> on line <b>121</b><br />\n{\"success\":{\"file\":\"\\/Applications\\/MAMP\\/htdocs\\/home-sites\\/plugin-dev\\/wp-content\\/uploads\\/2013\\/09\\/video.m4v\",\"url\":\"http:\\/\\/localhost\\/wp-content\\/uploads\\/2013\\/09\\/video.m4v\",\"type\":\"video\\/mp4\"},\"attachmentId\":71}",
+			"settings":
+			{
+				"buffer_size": 755,
+				"line_ending": "Unix",
+				"name": "<br />"
+			}
+		},
+		{
+			"file": "classes/class-wpmfu-file-upload-handler.php",
+			"settings":
+			{
+				"buffer_size": 4126,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "[<a href='0function.fopen0'>function.fopen0</a>]: failed to open stream: HTTP wrapper does not support writeable connections in <b>/Applications/MAMP/htdocs/home-sites/plugin-dev/wp-includes/class-wp-image-editor.php</b> on line <b>342</b><br />\n{\"success\":{\"file\":\"\\/Applications\\/MAMP\\/htdocs\\/home-sites\\/plugin-dev\\/wp-content\\/uploads\\/2013\\/09\\/220x220.gif\",\"url\":\"http:\\/\\/localhost\\/wp-content\\/uploads\\/2013\\/09\\/220x220.gif\",\"type\":\"image\\/gif\"},\"attachmentId\":75}",
+			"settings":
+			{
+				"buffer_size": 474,
+				"line_ending": "Unix",
+				"name": "[<a href='0function.fopen0'>function.fopen0</a>]:"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 219.0,
+		"selected_items":
+		[
+			[
+				"htm",
+				"Set Syntax: HTML5"
+			],
+			[
+				"tabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"tidy",
+				"Tidy PHP"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"tid",
+				"Tidy PHP"
+			],
+			[
+				"com",
+				"Sort via CSScomb"
+			],
+			[
+				"coff",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"inst	",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"contro",
+				"Preferences: Package Control Settings – Default"
+			]
+		],
+		"width": 435.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Applications/MAMP/htdocs/home-sites/plugin-dev/wp-admin/includes/image.php",
+		"/Applications/MAMP/htdocs/home-sites/plugin-dev/wp-content/plugins/wp-multi-file-uploader/readme.txt",
+		"/Applications/MAMP/htdocs/home-sites/plugin-dev/wp-content/plugins/wp-multi-file-uploader/wp-multi-file-uploader.php",
+		"/Applications/MAMP/htdocs/home-sites/plugin-dev/wp-content/plugins/wp-multi-file-uploader/classes/class-wpmfu-file-upload-handler.php",
+		"/Applications/MAMP/htdocs/home-sites/plugin-dev/wp-content/plugins/wp-multi-file-uploader/inc/wpmfu-post-type.php",
+		"/Applications/MAMP/htdocs/home-sites/plugin-dev/wp-content/plugins/wp-multi-file-uploader/classes/class-wpmfu-plugin.php",
+		"/Applications/MAMP/htdocs/home-sites/plugin-dev/wp-content/plugins/wp-multi-file-uploader/classes/class.wpmfu-form-builder.php",
+		"/Applications/MAMP/htdocs/home-sites/plugin-dev/wp-content/plugins/wp-multi-file-uploader/classes/class.wpmfu-html.php",
+		"/Applications/MAMP/htdocs/home-sites/plugin-dev/wp-content/plugins/wp-multi-file-uploader/wp-multi-file-uploader.sublime-workspace",
+		"/Applications/MAMP/htdocs/home-sites/plugin-dev/wp-content/plugins/wp-multi-file-uploader/classes/class-wpmfu-init.php",
+		"/Applications/MAMP/htdocs/home-sites/plugin-dev/wp-content/plugins/wp-multi-file-uploader/wp-multi-file-uploader.sublime-project",
+		"/Applications/MAMP/htdocs/home-sites/plugin-dev/wp-content/themes/twentythirteen/single-wpba-type.php",
+		"/Applications/MAMP/htdocs/home-sites/plugin-dev/wp-content/themes/twentythirteen/single-wpmfu-type.php",
+		"/Applications/MAMP/htdocs/home-sites/plugin-dev/wp-content/themes/twentythirteen/templates/template-wpmfu-general-testing.php",
+		"/Applications/MAMP/htdocs/home-sites/plugin-dev/wp-content/themes/twentythirteen/functions.php",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-multi-file-uploader/assets/js/fineuploader-execute.js",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/themes/twentytwelve/wp-multi-file-uploader-example.php",
+		"/Users/Mothership/Desktop/WPMultiFileUploader-new-param-fix/classes/class-wpmfu-file-upload-handler.php",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-multi-file-uploader/classes/class-wpmfu-file-upload-handler.php",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-multi-file-uploader/wp-multi-file-uploader.php",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-multi-file-uploader/classes/class-wpmfu-plugin.php",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-multi-file-uploader/wp-multi-file-uploader.sublime-workspace",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-multi-file-uploader/readme.txt",
+		"/Users/Mothership/Applications/MAMP/htdocs/svn/wp-better-attachments/trunk/readme.txt",
+		"/Users/Mothership/Applications/MAMP/htdocs/svn/wp-multi-file-uploader/trunk/readme.txt",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-multi-file-uploader/license.txt",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-multi-file-uploader/readme.md",
+		"/Users/Mothership/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/Mothership/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-config.php",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-multi-file-uploader/wp-multi-file-uploader.sublime-project",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-multi-file-uploader/classes/class.wpmfu-html.php",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-multi-file-uploader/classes/class.wpmfu-form-builder.php",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-multi-file-uploader/classes/class-wpmfu-init.php",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-multi-file-uploader/inc/wpmfu-post-type.php",
+		"/Users/Mothership/Desktop/wp-multi-file-uploader/assets/js/fineuploader-execute.js",
+		"/Users/Mothership/Library/Caches/Cleanup At Startup/Transmit/BEF8F375-9E55-4699-800D-E68BBD94BA14/fineuploader-execute.js",
+		"/Users/Mothership/Library/Caches/Cleanup At Startup/Transmit/B05E53C1-C2A3-4712-9E8B-1748D3AABE2C/fineuploader.js",
+		"/Users/Mothership/Applications/MAMP/htdocs/danholloran-com/wp-content/themes/danholloran/functions.php",
+		"/Users/Mothership/Library/Caches/Cleanup At Startup/Transmit/DC34C4DD-D385-4274-8A62-D560C28AFCE1/app.css",
+		"/Users/Mothership/Library/Caches/Cleanup At Startup/Transmit/DB82E94D-EC18-4534-BB20-2073F0CEF72F/app.css",
+		"/Users/Mothership/Applications/MAMP/htdocs/danholloran-com/wp-content/themes/danholloran/assets/css/scss/templates/_footer.scss",
+		"/Users/Mothership/Applications/MAMP/htdocs/danholloran-com/wp-content/themes/danholloran/assets/css/scss/global/_media.scss",
+		"/Users/Mothership/Applications/MAMP/htdocs/danholloran-com/wp-content/themes/danholloran/assets/css/app.css",
+		"/Users/Mothership/Applications/MAMP/htdocs/danholloran-com/wp-content/themes/danholloran/assets/css/scss/global/_sticky-footer.scss",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-github-recent-commit/readme.txt",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-github-recent-commit/wp-github-recent-commit.php",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-github-recent-commit/classes/class.github-api-v3.php",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-github-recent-commit/widget/github-widget.php",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-github-recent-commit/classes/class.wpgrc-init.php",
+		"/Users/Mothership/Library/Caches/Cleanup At Startup/Transmit/0F77424D-BDEC-4BF6-8FE4-0B2DF6B5E76B/wp-better-attachments.php",
+		"/Users/Mothership/Library/Caches/Cleanup At Startup/Transmit/49E2D93A-B213-4A55-B6F5-EBCC45E2BE32/custom.php",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-github-recent-commit/views/view-github-widget.php",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/themes/twentytwelve/wp-github-recent-commit-example.php",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-github-recent-commit/widget/views/view-github-widget.php",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-github-recent-commit/classes/class.cache-github-api-v3.php",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-github-recent-commit/screenshot-2.png",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-better-attachments/license.txt",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-better-attachments/wp-better-attachments.sublime-project",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-better-attachments/assets/css/scss/wpba-admin.scss",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-better-attachments/assets/js/wpba-crop-3.5.js",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-better-attachments/classes/class-wpba-crop-resize.php",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-better-attachments/assets/js/wpba-attachment.js",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wpcom-thumnail-editor/wpcom-thumbnail-editor.php",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-better-attachments/wp-better-attachments.php",
+		"/Users/Mothership/Applications/MAMP/htdocs/danholloran-com/wp-content/themes/danholloran/lib/custom.php",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-better-attachments/screenshot-4.png",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-better-attachments/classes/class-wpba-ajax.php",
+		"/Users/Mothership/Sites/wordpress/wp-content/themes/roots/lib/config.php",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-better-attachments/classes/class-wp-better-attachments.php",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-better-attachments/classes/class-wpba-meta-box.php",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-better-attachments/assets/css/scss/partials/_meta-box.scss",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-better-attachments/libs/wp-settings-api-bootstrap/class.wp-settings-api-bootstrap.php",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-better-attachments/classes/class-wpba-init.php",
+		"/Users/Mothership/Sites/svn/wp-better-attachments/tags/1.2.2/readme.txt",
+		"/Users/Mothership/Library/Caches/Cornerstone/Store/http%3A%2F%2Fdholloran%40plugins.svn.wordpress.org/0000704734/wp-better-attachments/tags/1.2.2/readme.txt",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-better-attachments/readme.txt",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-better-attachments/classes/class-wpba-settings.php",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-better-attachments/assets/js/wpba-functions.js",
+		"/Users/Mothership/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-better-attachments/assets/js/wpba-media-handler-new.js",
+		"/Users/Mothership/Sites/plugin-dev/wp-admin/includes/media.php",
+		"/Users/Mothership/Desktop/wpcom-thumnail-editor/wpcom-thumbnail-editor.php",
+		"/Users/Mothership/Sites/plugin-dev/wp-content/themes/twentytwelve/wp-better-attachments-example.php",
+		"/Users/Mothership/Sites/plugin-dev/wp-content/plugins/wp-better-attachments/classes/class-wpba-ajax.php",
+		"/Users/Mothership/Sites/plugin-dev/wp-content/plugins/wp-better-attachments/classes/class-wp-better-attachments.php",
+		"/Users/Mothership/Sites/plugin-dev/wp-content/plugins/wp-better-attachments/classes/class-wpba-meta-box.php",
+		"/Users/Mothership/Sites/plugin-dev/wp-content/plugins/wp-better-attachments/classes/class-wpba-settings.php",
+		"/Users/Mothership/Sites/plugin-dev/wp-content/plugins/bootstrap-heads-up-grid/setup.js",
+		"/Users/Mothership/Sites/plugin-dev/wp-content/plugins/bootstrap-heads-up-grid/bootstrap-grid.php",
+		"/Users/Mothership/Sites/plugin-dev/wp-content/plugins/wp-better-attachments/readme.txt",
+		"/Users/Mothership/Sites/plugin-dev/wp-content/plugins/wp-better-attachments/assets/js/wpba-functions.js",
+		"/Users/Mothership/Sites/plugin-dev/wp-content/plugins/wp-better-attachments/assets/js/wpba-media-handler-old.js",
+		"/Users/Mothership/Sites/plugin-dev/wp-content/plugins/wp-better-attachments/wp-better-attachments.php",
+		"/Users/Mothership/Sites/plugin-dev/wp-content/plugins/wp-better-attachments/wp-better-attachments.sublime-project",
+		"/Users/Mothership/Sites/plugin-dev/wp-content/plugins/wp-better-attachments/assets/css/scss/partials/_meta-box.scss",
+		"/Users/Mothership/Sites/plugin-dev/wp-content/plugins/wp-better-attachments/screenshot-4.png",
+		"/Users/Mothership/Sites/plugin-dev/wp-content/plugins/wp-better-attachments/license.txt",
+		"/Users/Mothership/Sites/plugin-dev/wp-content/plugins/wp-better-attachments/classes/class-wpba-crop-resize.php",
+		"/Users/Mothership/Sites/plugin-dev/wp-content/plugins/wp-better-attachments/assets/js/wpba-crop-3.5.js",
+		"/Users/Mothership/Sites/plugin-dev/wp-content/plugins/wp-better-attachments/assets/js/wpba-media-handler-new.js",
+		"/Users/Mothership/Sites/plugin-dev/wp-content/themes/twentytwelve/functions.php",
+		"/Users/Mothership/Sites/plugin-dev/wp-content/plugins/wp-better-attachments/assets/css/scss/wpba-admin.scss",
+		"/Users/Mothership/Sites/plugin-dev/wp-admin/admin-ajax.php",
+		"/Users/Mothership/Desktop/save.txt",
+		"/Users/Mothership/Sites/plugin-dev/wp-content/plugins/wp-better-attachments/assets/css/scss/partials/imgareaselect-default.css",
+		"/Users/Mothership/Desktop/custom.php",
+		"/Users/Mothership/Sites/plugin-dev/wp-content/plugins/wp-better-attachments/classes/class-wpba-init.php",
+		"/Users/Mothership/Sites/plugin-dev/wp-content/plugins/wp-better-attachments/assets/css/scss/partials/_utilities.scss",
+		"/Users/Mothership/Sites/plugin-dev/wp-admin/includes/image.php",
+		"/Users/Mothership/Sites/plugin-dev/wp-admin/includes/image-edit.php",
+		"/Users/Mothership/Sites/plugin-dev/wp-includes/class-wp-image-editor.php",
+		"/Users/Mothership/Sites/plugin-dev/wp-includes/class-wp-image-editor-gd.php",
+		"/Users/Mothership/Sites/plugin-dev/wp-includes/class-wp-image-editor-imagick.php",
+		"/Users/Mothership/Sites/plugin-dev/wp-includes/media.php",
+		"/Users/Mothership/Sites/plugin-dev/wp-content/plugins/wp-better-attachments/libs/custom-meta.php",
+		"/Users/Mothership/Sites/plugin-dev/wp-includes/post.php",
+		"/Users/Mothership/Sites/plugin-dev/wp-admin/post.php",
+		"/Users/Mothership/Sites/plugin-dev/wp-content/plugins/orchestra/vendor/twig/twig/test/Twig/Tests/Node/Expression/Unary/PosTest.php",
+		"/Users/Mothership/Sites/plugin-dev/wp-content/plugins/wp-better-attachments/assets/js/wpba-attachment.js",
+		"/Users/Mothership/Sites/plugin-dev/wp-content/plugins/wp-better-attachments/assets/js/wpba-media-handler-old.min.js",
+		"/Users/Mothership/Sites/plugin-dev/wp-content/plugins/wp-better-attachments/assets/js/wpba-media-handler-new.min.js",
+		"/Users/Mothership/Sites/plugin-dev/wp-content/plugins/wp-better-attachments/wp-better-attachments.sublime-workspace",
+		"/Users/Mothership/Sites/plugin-dev/wp-content/plugins/wp-better-attachments/libs/wp-settings-api-bootstrap/class.wp-settings-api-bootstrap.php",
+		"/Users/Mothership/Library/Caches/Cleanup At Startup/Transmit/376FC156-DF0E-417B-8922-B526ABD046E8/wp-config.php",
+		"/Users/Mothership/Library/Caches/Cleanup At Startup/Transmit/CF3FF985-E162-4AF8-9556-AE8A27FF46BB/config.php",
+		"/Applications/MAMP/Sites/home/danholloran-com/wp-content/themes/child-theme/_assets/inc/functions/file_loader.inc.php",
+		"/Applications/MAMP/Sites/home/danholloran-com/wp-content/themes/child-theme/header.php",
+		"/Applications/MAMP/Sites/home/danholloran-com/wp-content/themes/child-theme/_assets/css/less/partials/sticky-footer.less"
+	],
+	"find":
+	{
+		"height": 51.0
+	},
+	"find_in_files":
+	{
+		"height": 108.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"new",
+			"class-wp-image-editor.php",
+			"fopen",
+			"class-wp-image-editor",
+			"wp_update_attachment_metadata",
+			"@version 1.1.2",
+			"1.1.2",
+			"wp_generate_attachment_metadata",
+			"image.php",
+			"@version 1.1.0",
+			"@version",
+			"1.1.2",
+			"fineuploader.css",
+			"wp_update_attachment_metadata",
+			"class-wp-image",
+			"wp-class-image",
+			"class-wp-image",
+			"wpba-settings",
+			"WPBA",
+			"wpba_settings_type_post_type_args",
+			"category",
+			"post",
+			"1",
+			"form_submit",
+			"add_attachment",
+			"handle_upload",
+			"var_dump",
+			"pp(",
+			"__CLASS__",
+			"check_file_type",
+			"allowed_mime_types",
+			"check_file_type",
+			"] =",
+			"wpmfu_{$post->ID}_",
+			"check_file_type",
+			"get",
+			"Get",
+			"get",
+			"Get",
+			"_post",
+			"_POST",
+			"$allowed_mime_types",
+			"allowed_mime_types",
+			"needle",
+			"check_file_type",
+			"handle_upload",
+			" =",
+			"$('#wp_multi_file_uploader')",
+			"max_file_size",
+			"allowed_mime_types",
+			"‘WP_MEMORY_LIMIT’",
+			"var_dump",
+			"mimes",
+			"variable",
+			"wp_allowed_mime_types",
+			"wp_multi_file_uploader",
+			"wp_multi_file_uploader_shortcode",
+			"default_atts",
+			"$wpmfu_plugin->version",
+			"version",
+			"1.0.0",
+			"1.1.1",
+			"1.1.0",
+			"@version 1.1.0",
+			"$version",
+			"/*",
+			"1.1.0",
+			"height: 210px;",
+			"height: 210px",
+			"content-info",
+			"height: 210px;",
+			"210",
+			"content-info",
+			"height",
+			"enqueue_files",
+			"pp(",
+			"get_commits",
+			"Octocat",
+			"get_latest_commit_key",
+			"shortcode",
+			"$html. =",
+			"show_octocat",
+			"true",
+			"author_avatar_url",
+			"octocat",
+			"build_widget_output_array",
+			"error_msg",
+			"variable",
+			"latest_commit_key",
+			"get_latest_commit_key",
+			"commit_count",
+			"get_random_octocat",
+			"get_octocats",
+			"octocat",
+			"pp(",
+			"if ( true )",
+			"pp(",
+			"get_repos",
+			"no",
+			"build_widget_output_array",
+			"$commit",
+			"commit",
+			"build_widget_output_array",
+			"$widget_content",
+			"selected_repository_name",
+			"is_new_repository",
+			"head",
+			"HEAD",
+			"1.2.2",
+			"pp(",
+			"select",
+			"wp-media-buttons-icon",
+			"button",
+			"wpba-attachments-button",
+			"output_attachments",
+			"span",
+			"h3",
+			"aspect_ratio_width",
+			"start_width",
+			"image_width",
+			"end_width",
+			"image_width",
+			"crop_src_width",
+			"width",
+			"crop_src_width",
+			"start_width",
+			"crop_src_width",
+			"image_width"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"@version 1.1.3",
+			"$allowed_file_types",
+			"1.1.0",
+			"1.0.0",
+			"@version 1.1.1",
+			"1.2.1",
+			"wpba.resetClickHandlers",
+			"wpba.captionKeyUpHandler",
+			"wpba.titleKeyUpHandler",
+			"wpba.updatePostMeta",
+			"wpba.showEditScreenModal",
+			"wpba.editModalClickHandler",
+			"wpba.refreshAttachments",
+			"wpba.deleteAttachmentClickHandler",
+			"wpba.deleteAttachment",
+			"wpba.unattachAttachmentClickHandler",
+			"wpba.unattachAttachment",
+			"wpba.updateSortOrderClickHandler",
+			"wpba.updateSortOrder",
+			"wpba-disable-post-types",
+			"wpbaUpdateSortOrder",
+			"wpbaUpdateSortOrderClickHandler",
+			"wpbaUnattachAttachment",
+			"wpbaUnattachAttachmentClickHandler",
+			"wpbaUnattachAttachmentLibraryClickHandler",
+			"wpbaDeleteAttachment",
+			"wpbaDeleteAttachmentClickHandler",
+			"wpbaRefreshAttachments",
+			"wpbaEditModalClickHandler",
+			"wpbaResetClickHandlers",
+			"wpbaShowEditScreenModal"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"settings":
+					{
+						"buffer_size": 755,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								755,
+								755
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_name": "<br />",
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "classes/class-wpmfu-file-upload-handler.php",
+					"settings":
+					{
+						"buffer_size": 4126,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2158,
+								2158
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "bright",
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/HTML5/Syntaxes/HTML 5.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1564.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"settings":
+					{
+						"buffer_size": 474,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								191,
+								216
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_name": "[<a href='0function.fopen0'>function.fopen0</a>]:",
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 52.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"uploa",
+				"classes/class-wpmfu-file-upload-handler.php"
+			],
+			[
+				"execjs",
+				"assets/js/fineuploader-execute.js"
+			],
+			[
+				"uploadphp",
+				"classes/class-wpmfu-file-upload-handler.php"
+			],
+			[
+				"uploph",
+				"wp-multi-file-uploader.php"
+			],
+			[
+				"ex",
+				"assets/js/fineuploader-execute.js"
+			],
+			[
+				"rea",
+				"readme.txt"
+			],
+			[
+				"plugin",
+				"classes/class-wpmfu-plugin.php"
+			],
+			[
+				"txt",
+				"readme.txt"
+			],
+			[
+				"fileupl",
+				"classes/class-wpmfu-file-upload-handler.php"
+			],
+			[
+				"exec",
+				"assets/js/fineuploader-execute.js"
+			],
+			[
+				".js",
+				"assets/js/fineuploader-execute.js"
+			],
+			[
+				"fileuha",
+				"classes/class-wpmfu-file-upload-handler.php"
+			],
+			[
+				"wp-muli",
+				"wp-multi-file-uploader.php"
+			],
+			[
+				"class-wpm",
+				"classes/class-wpmfu-plugin.php"
+			],
+			[
+				"med",
+				"assets/css/scss/global/_media.scss"
+			],
+			[
+				"footer",
+				"assets/css/scss/templates/_footer.scss"
+			],
+			[
+				"widg",
+				"widget/github-widget.php"
+			],
+			[
+				"wp-git",
+				"wp-github-recent-commit.php"
+			],
+			[
+				"read",
+				"readme.txt"
+			],
+			[
+				"wid",
+				"widget/github-widget.php"
+			],
+			[
+				"api",
+				"classes/class.github-api-v3.php"
+			],
+			[
+				"view",
+				"views/view-github-widget.php"
+			],
+			[
+				"widgt",
+				"widget/github-widget.php"
+			],
+			[
+				"cach",
+				"classes/class.cache-github-api-v3.php"
+			],
+			[
+				"class",
+				"classes/class.github-api-v3.php"
+			],
+			[
+				"recen",
+				"wp-github-recent-commit.php"
+			],
+			[
+				"resiz",
+				"wp-better-attachments/classes/class-wpba-crop-resize.php"
+			],
+			[
+				"mediajs",
+				"wp-better-attachments/assets/js/wpba-media-handler-new.js"
+			],
+			[
+				"metscs",
+				"wp-better-attachments/assets/css/scss/partials/_meta-box.scss"
+			],
+			[
+				"met",
+				"wp-better-attachments/classes/class-wpba-meta-box.php"
+			],
+			[
+				"admisc",
+				"wp-better-attachments/assets/css/scss/wpba-admin.scss"
+			],
+			[
+				"wpbetter",
+				"wp-better-attachments/classes/class-wp-better-attachments.php"
+			],
+			[
+				"meta",
+				"wp-better-attachments/classes/class-wpba-meta-box.php"
+			],
+			[
+				"adsc",
+				"wp-better-attachments/assets/css/scss/wpba-admin.scss"
+			],
+			[
+				"conf",
+				"roots/lib/config.php"
+			],
+			[
+				"metasc",
+				"assets/css/scss/partials/_meta-box.scss"
+			],
+			[
+				"classwpbet",
+				"classes/class-wp-better-attachments.php"
+			],
+			[
+				"wpbet",
+				"wp-better-attachments.php"
+			],
+			[
+				"apis",
+				"libs/wp-settings-api-bootstrap/class.wp-settings-api-bootstrap.php"
+			],
+			[
+				"claswpbe",
+				"classes/class-wp-better-attachments.php"
+			],
+			[
+				"wp-bet",
+				"wp-better-attachments.php"
+			],
+			[
+				"wp",
+				"wp-better-attachments.php"
+			],
+			[
+				"ini",
+				"classes/class-wpba-init.php"
+			],
+			[
+				"wpba-php",
+				"wp-better-attachments.php"
+			],
+			[
+				"functio",
+				"assets/js/wpba-functions.js"
+			],
+			[
+				"swttin",
+				"libs/wp-settings-api-bootstrap/class.wp-settings-api-bootstrap.php"
+			],
+			[
+				"wpbsett",
+				"classes/class-wpba-settings.php"
+			],
+			[
+				"claswpbet",
+				"classes/class-wp-better-attachments.php"
+			],
+			[
+				"setin",
+				"classes/class-wpba-settings.php"
+			],
+			[
+				"clsswpatt",
+				"classes/class-wp-better-attachments.php"
+			],
+			[
+				"wpbmeta",
+				"classes/class-wpba-meta-box.php"
+			],
+			[
+				"func",
+				"assets/js/wpba-functions.js"
+			],
+			[
+				"re",
+				"readme.txt"
+			],
+			[
+				"wpbafun",
+				"assets/js/wpba-functions.js"
+			],
+			[
+				"atta",
+				"assets/js/wpba-attachment.js"
+			],
+			[
+				"old",
+				"assets/js/wpba-media-handler-old.js"
+			],
+			[
+				"wpbaja",
+				"classes/class-wpba-ajax.php"
+			],
+			[
+				"wpbmet",
+				"wp-better-attachments/classes/class-wpba-meta-box.php"
+			],
+			[
+				"wpbameta",
+				"wp-better-attachments/classes/class-wpba-meta-box.php"
+			],
+			[
+				"wpbasetting",
+				"wp-better-attachments/classes/class-wpba-settings.php"
+			],
+			[
+				"ajax",
+				"wp-better-attachments/classes/class-wpba-ajax.php"
+			],
+			[
+				"aja",
+				"plugin-dev/wp-admin/admin-ajax.php"
+			],
+			[
+				"medne",
+				"wp-better-attachments/assets/js/wpba-media-handler-new.js"
+			],
+			[
+				"image.php",
+				"plugin-dev/wp-admin/includes/image-edit.php"
+			],
+			[
+				"cslwpbet",
+				"classes/class-wp-better-attachments.php"
+			],
+			[
+				"setting",
+				"classes/class-wpba-settings.php"
+			],
+			[
+				"meta.s",
+				"wp-better-attachments/assets/css/scss/partials/_meta-box.scss"
+			],
+			[
+				"post",
+				"plugin-dev/wp-admin/post.php"
+			],
+			[
+				"wpoldmin",
+				"assets/js/wpba-media-handler-old.min.js"
+			],
+			[
+				"wpbold",
+				"assets/js/wpba-media-handler-old.js"
+			],
+			[
+				"att",
+				"assets/js/wpba-attachment.js"
+			],
+			[
+				"clswp",
+				"classes/class-wp-better-attachments.php"
+			],
+			[
+				"wpbe",
+				"wp-better-attachments.php"
+			],
+			[
+				"wpbaj",
+				"classes/class-wpba-ajax.php"
+			],
+			[
+				"attac",
+				"assets/js/wpba-attachment.js"
+			],
+			[
+				"js",
+				"assets/js/wpba-functions.js"
+			],
+			[
+				".scss",
+				"assets/css/scss/wpba-admin.scss"
+			],
+			[
+				"attacjs",
+				"assets/js/wpba-attachment.js"
+			],
+			[
+				"stick",
+				"_assets/css/less/partials/sticky-footer.less"
+			],
+			[
+				"load",
+				"_assets/inc/functions/file_loader.inc.php"
+			],
+			[
+				"he",
+				"header.php"
+			],
+			[
+				"head",
+				"header.php"
+			],
+			[
+				"hea",
+				"header.php"
+			],
+			[
+				"bod",
+				"_assets/css/less/partials/body.less"
+			],
+			[
+				"foot",
+				"footer.php"
+			],
+			[
+				"site",
+				"_assets/css/less/site.less"
+			],
+			[
+				"rapto",
+				"_assets/raptorize/jquery.raptorize.1.0.js"
+			],
+			[
+				"coff",
+				"_assets/js/coffee/coffee.coffee"
+			],
+			[
+				"pro",
+				"_assets/inc/functions/project_specific.inc.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"wpbet",
+				"/Applications/MAMP/htdocs/home-sites/plugin-dev/wp-content/plugins/wp-better-attachments/wp-better-attachments.sublime-project"
+			],
+			[
+				"word",
+				"/Applications/MAMP/htdocs/work-sites/wordnerded.com/wordnerded.sublime-project"
+			],
+			[
+				"",
+				"~/Applications/MAMP/htdocs/plugin-dev/wp-content/plugins/wp-better-attachments/wp-better-attachments.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 209.0,
+	"status_bar_visible": true
+}
