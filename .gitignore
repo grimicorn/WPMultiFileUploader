@@ -1,1 +1,3 @@
 /assets/css/less/
+*.sublime*
+.DS_Store
