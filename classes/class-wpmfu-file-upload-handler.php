@@ -38,7 +38,7 @@ class WPFMU_FileUploadHandler extends WPMFU_Plugin
 		if ( $movefile ) {
 			$wp_upload_dir = wp_upload_dir();
 			$filename = str_replace( $wp_upload_dir['url'] . '/', '', $movefile['url'] );
-			$attachment = $this->add_attachment( $movefile['url'] );
+			$attachment = $this->add_attachment( $movefile['url'], $movefile['file'] );
 			return array(
 				'success' 		=> $movefile,
 				'attachmentId'	=> $attachment
@@ -52,13 +52,39 @@ class WPFMU_FileUploadHandler extends WPMFU_Plugin
 
 
 	/**
+	* Create Image Sizes
+	*
+	* @since 1.1.2
+	*/
+	function create_image_sizes( $filepath )
+	{
+		$sizes = array();
+		foreach( get_intermediate_image_sizes() as $s ) {
+			$sizes[$s] = array( 'width' => '', 'height' => '', 'crop' => true );
+			$sizes[$s]['width'] = get_option( "{$s}_size_w" ); // For default sizes set in options
+			$sizes[$s]['height'] = get_option( "{$s}_size_h" ); // For default sizes set in options
+			$sizes[$s]['crop'] = get_option( "{$s}_crop" ); // For default sizes set in options
+		} // foreach()
+
+		$sizes = apply_filters( 'intermediate_image_sizes_advanced', $sizes );
+		$metadata = array();
+		foreach( $sizes as $size => $size_data ) {
+			$resized = image_make_intermediate_size( $filepath, $size_data['width'], $size_data['height'], $size_data['crop'] );
+			if ( $resized )
+				$metadata[$size] = $resized;
+		} // foreach()
+		return $metadata;
+	} // create_image_sizes()
+
+
+	/**
 	* Handle Attachment
 	*
 	* @since 1.0.0
 	*/
-	public function add_attachment( $url )
+	public function add_attachment( $url, $filepath )
 	{
-
+		$meta = $this->create_image_sizes( $filepath );
 		$wp_upload_dir = wp_upload_dir();
 		$filename = str_replace( $wp_upload_dir['url'] . '/', '', $url );
 		$wp_filetype = wp_check_filetype(basename($filename), null );
@@ -74,7 +100,8 @@ class WPFMU_FileUploadHandler extends WPMFU_Plugin
 		// you must first include the image.php file
 		// for the function wp_generate_attachment_metadata() to work
 		require_once( ABSPATH . 'wp-admin/includes/image.php' );
-		$attach_data = wp_generate_attachment_metadata( $attach_id, $filename );
+		$attach_data = wp_generate_attachment_metadata( $attach_id, $url );
+		$attach_data['sizes'] = $meta;
 		wp_update_attachment_metadata( $attach_id, $attach_data );
 
 		return $attach_id;
