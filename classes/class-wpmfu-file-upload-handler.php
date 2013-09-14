@@ -74,8 +74,11 @@ class WPFMU_FileUploadHandler extends WPMFU_Plugin
 		// you must first include the image.php file
 		// for the function wp_generate_attachment_metadata() to work
 		require_once( ABSPATH . 'wp-admin/includes/image.php' );
-		$attach_data = wp_generate_attachment_metadata( $attach_id, $filename );
-		wp_update_attachment_metadata( $attach_id, $attach_data );
+
+		if ( wp_attachment_is_image( $attach_id ) ) {
+			$attach_data = wp_generate_attachment_metadata( $attach_id, $filename );
+			wp_update_attachment_metadata( $attach_id, $attach_data );
+		} // if()
 
 		return $attach_id;
 	} //add_attachment()
