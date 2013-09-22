@@ -22,7 +22,7 @@ jQuery(function($) {
 					callbacks: {
 						onComplete: function(id, fileName, response) {
 							if(response.success) {
-								var parentForm = $('#wp_multi_file_uploader').parent('form'),
+								var parentForm = $('#wp_multi_file_uploader').parents('form'),
 									uploader = $('#wp_multi_file_uploader'),
 									fileCount = uploader.data('filecount'),
 									attachId = response.attachmentId
