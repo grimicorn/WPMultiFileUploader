@@ -74,10 +74,32 @@ For more information see the examples <a href="#wpmfu_examples">below</a>.</p>
 <h3>
 <a name="example-using-the-shortcode" class="anchor" href="#example-using-the-shortcode"><span class="octicon octicon-link"></span></a>Example Using The Shortcode</h3>
 
+<pre><code>&lt;!-- In The Post Editor --&gt;
+&lt;form action="?" method="post" accept-charset="utf-8"&gt;
+  &lt;label for="unique_name"&gt;Your Name:&lt;/label&gt;
+  &lt;input type="text" name="unique_name" id="unique_name" value="" placeholder="Your Name"&gt;
+  &lt;!-- Accepts .jpg files only with a max file size of 3mb --&gt;
+  [wp-multi-file-uploader allowed_mime_types="jpg" max_file_size="3"]
+  &lt;input type="submit" name="submit" value="Submit"&gt;
+&lt;/form&gt;
+&lt;!-- END In The Post Editor --&gt;
+</code></pre>
+
 <h3>
 <a name="example-using-the-template-function" class="anchor" href="#example-using-the-template-function"><span class="octicon octicon-link"></span></a>Example Using The Template Function</h3>
 
-
+<pre><code>&lt;!-- In a Template File --&gt;
+&lt;form action="?" method="post" accept-charset="utf-8"&gt;
+  &lt;label for="unique_name"&gt;Your Name:&lt;/label&gt;
+  &lt;input type="text" name="unique_name" id="unique_name" value="" placeholder="Your Name"&gt;
+  &lt;?php wp_multi_file_uploader(array(
+    'allowed_mime_types'  =&gt;  'jpg,png,gif', // accepts .jpg, .png, .gif file types
+    'max_file_size'      =&gt;  '32' // 32mb
+  )); ?&gt;
+  &lt;input type="submit" name="submit" value="Submit"&gt;
+&lt;/form&gt;
+&lt;!-- END In a Template File --&gt;
+</code></pre>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/DHolloran">DHolloran</a></p>
