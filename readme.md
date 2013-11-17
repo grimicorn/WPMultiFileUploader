@@ -35,25 +35,7 @@ To get started with WP Multi File Uploader you can download it directly from [Gi
 ##Examples
 <div id="wpmfu_examples"></div>
 ###Example Using The Shortcode
-	<!-- In The Post Editor -->
-	<form action="?" method="post" accept-charset="utf-8">
-		<label for="unique_name">Your Name:</label>
-		<input type="text" name="unique_name" id="unique_name" value="" placeholder="Your Name">
-		<!-- Accepts .jpg files only with a max file size of 3mb -->
-		[wp-multi-file-uploader allowed_mime_types="jpg" max_file_size="3"]
-		<input type="submit" name="submit" value="Submit">
-	</form>
-	<!-- END In The Post Editor -->
+<script src="https://gist.github.com/DHolloran/7515060.js"></script>
 
-<h3>Example Using The Template Function</h3>
-	<!-- In a Template File -->
-	<form action="?" method="post" accept-charset="utf-8">
-		<label for="unique_name">Your Name:</label>
-		<input type="text" name="unique_name" id="unique_name" value="" placeholder="Your Name">
-		<?php wp_multi_file_uploader(array(
-			'allowed_mime_types'	=>	'jpg,png,gif', // accepts .jpg, .png, .gif file types
-			'max_file_size'			=>	'32' // 32mb
-		)); ?>
-		<input type="submit" name="submit" value="Submit">
-	</form>
-	<!-- END In a Template File -->
+###Example Using The Template Function
+<script src="https://gist.github.com/DHolloran/1cd708170a2042f92b3d.js"></script>
