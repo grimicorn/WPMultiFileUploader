@@ -1,37 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="WP Multi File Uploader : Wordpress plugin that allows a user to submit multiple files from a form on your Wordpress site via AJAX." />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>WP Multi File Uploader by DHolloran</title>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>WP Multi File Uploader</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
-
   <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/DHolloran/WPMultiFileUploader">View on GitHub</a>
-
-          <h1 id="project_title">WP Multi File Uploader</h1>
-          <h2 id="project_tagline">Wordpress plugin that allows a user to submit multiple files from a form on your Wordpress site via AJAX.</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/DHolloran/WPMultiFileUploader/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/DHolloran/WPMultiFileUploader/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
+    <div class="wrapper">
+      <header>
         <h1>WP Multi File Uploader</h1>
+        <p>Wordpress plugin that allows a user to submit multiple files from a form on your Wordpress site via AJAX.</p>
+
+        <p class="view"><a href="https://github.com/DHolloran/WPMultiFileUploader">View the Project on GitHub <small>DHolloran/WPMultiFileUploader</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/DHolloran/WPMultiFileUploader/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/DHolloran/WPMultiFileUploader/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/DHolloran/WPMultiFileUploader">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="wp-multi-file-uploader" class="anchor" href="#wp-multi-file-uploader"><span class="octicon octicon-link"></span></a>WP Multi File Uploader</h1>
 
 <p><strong>Description:</strong> Wordpress plugin that allows a user to submit multiple files from a form on your Wordpress site via AJAX to Wordpress default uploads folder and adds an attachment to the
 Wordpress media gallery.  Includes a shortcode <code>[wp-multi-file-uploader]</code> for use in a form created in the post editor and a function for use in a form in a template file <code>wp_multi_file_uploader();</code>.</p>
@@ -47,66 +45,46 @@ For more information see the examples <a href="#wpmfu_examples">below</a>.</p>
 
 <p>If you have any issues please submit an <a href="https://github.com/DHolloran/WPMultiFileUploader/issues/new">issue</a> or fix it/submit a pull request I will try to handle it ASAP. You an also contact me at <a href="mailto:dan@danholloran.com">Dan@danholloran.com</a>.</p>
 
-<h2>Getting Started</h2>
+<h2>
+<a name="getting-started" class="anchor" href="#getting-started"><span class="octicon octicon-link"></span></a>Getting Started</h2>
 
 <p>To get started with WP Multi File Uploader you can download it directly from <a href="https://github.com/DHolloran/WPMultiFileUploader/archive/master.zip">GitHub here</a>, search for WP Multi File Uploader in your administrator section's Plugins &gt; Add New, or you can download it from the <a href="http://wordpress.org/extend/plugins/wp-multi-file-uploader/">Wordpress plugins here</a>.</p>
 
-<h3>Wordpress Plugin Directory Instructions</h3>
+<h3>
+<a name="wordpress-plugin-directory-instructions" class="anchor" href="#wordpress-plugin-directory-instructions"><span class="octicon octicon-link"></span></a>Wordpress Plugin Directory Instructions</h3>
 
 <ol>
 <li>search for WP Multi File Uploader in your administrator section's Plugins &gt; Add New</li>
 <li>install &amp; Activate WP Multi File Uploader</li>
 <li>Place the shortcode <code>[wp-multi-file-uploader]</code> in your form somewhere in either in the post editor or you can use <code>wp_multi_file_uploader();</code> in your theme.</li>
 <li>For each file uploaded the plugin will add a hidden input field <code>name="wp_multi_file_uploader_[NUMBER]"</code> with [NUMBER] representing the amount of files starting at 1 and the value will be the uploads attachment id</li>
-</ol><h3>Manual Install Instructions</h3>
+</ol><h3>
+<a name="manual-install-instructions" class="anchor" href="#manual-install-instructions"><span class="octicon octicon-link"></span></a>Manual Install Instructions</h3>
 
 <ol>
 <li>Unzip your download and place in wp-content/plugins/</li>
 <li>Activate WP Multi File Uploader in the Wordpress Admin area</li>
 <li>Place the shortcode <code>[wp-multi-file-uploader]</code> in your form somewhere in either in the post editor or <code>wp_multi_file_uploader();</code> in your template file.</li>
 <li>For each file uploaded the plugin will add a hidden input field <code>name="wp_multi_file_uploader_[NUMBER]"</code> with [NUMBER] representing the amount of files starting at 1 and the value will be the uploads attachment id</li>
-</ol><h2>Examples</h2>
+</ol><h2>
+<a name="examples" class="anchor" href="#examples"><span class="octicon octicon-link"></span></a>Examples</h2>
 
 <div></div>
 
-<h3>Example Using The Shortcode</h3>
+<h3>
+<a name="example-using-the-shortcode" class="anchor" href="#example-using-the-shortcode"><span class="octicon octicon-link"></span></a>Example Using The Shortcode</h3>
 
-<pre><code>&lt;!-- In The Post Editor --&gt;
-&lt;form action="?" method="post" accept-charset="utf-8"&gt;
-    &lt;label for="unique_name"&gt;Your Name:&lt;/label&gt;
-    &lt;input type="text" name="unique_name" id="unique_name" value="" placeholder="Your Name"&gt;
-    &lt;!-- Accepts .jpg files only with a max file size of 3mb --&gt;
-    [wp-multi-file-uploader allowed_mime_types="jpg" max_file_size="3"]
-    &lt;input type="submit" name="submit" value="Submit"&gt;
-&lt;/form&gt;
-&lt;!-- END In The Post Editor --&gt;
-</code></pre>
+<h3>
+<a name="example-using-the-template-function" class="anchor" href="#example-using-the-template-function"><span class="octicon octicon-link"></span></a>Example Using The Template Function</h3>
 
-<h3>Example Using The Template Function</h3>
 
-<pre><code>&lt;!-- In a Template File --&gt;
-&lt;form action="?" method="post" accept-charset="utf-8"&gt;
-    &lt;label for="unique_name"&gt;Your Name:&lt;/label&gt;
-    &lt;input type="text" name="unique_name" id="unique_name" value="" placeholder="Your Name"&gt;
-    &lt;?php wp_multi_file_uploader(array(
-        'allowed_mime_types'    =&gt;  'jpg,png,gif', // accepts .jpg, .png, .gif file types
-        'max_file_size'         =&gt;  '32' // 32mb
-    )); ?&gt;
-    &lt;input type="submit" name="submit" value="Submit"&gt;
-&lt;/form&gt;
-&lt;!-- END In a Template File --&gt;
-</code></pre>
       </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">WP Multi File Uploader maintained by <a href="https://github.com/DHolloran">DHolloran</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/DHolloran">DHolloran</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
-
+    <script src="javascripts/scale.fix.js"></script>
               <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -117,7 +95,6 @@ For more information see the examples <a href="#wpmfu_examples">below</a>.</p>
             pageTracker._trackPageview();
             } catch(err) {}
           </script>
-
 
   </body>
 </html>
